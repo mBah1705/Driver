@@ -133,5 +133,8 @@
       }
     }
   },
-  "defaultProject": "driver"
+  "defaultProject": "driver",
+  "cli": {
+    "analytics": false
+  }
 }
