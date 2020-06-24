@@ -1,0 +1,13 @@
+<div class="intro">
+  Ci-dessous la liste des points à cocher après Nettoyage Inspection & Lubrification pour la semaine choisie:
+</div>
+<div class="content">
+  <div class="check-list">
+    <div class="check" *ngFor="let check of checks">
+      <mat-slide-toggle>{{check.label}}</mat-slide-toggle>
+    </div>
+  </div>
+  <div class="actions">
+    <button mat-raised-button color="primary">Soumettre</button>
+  </div>
+</div>

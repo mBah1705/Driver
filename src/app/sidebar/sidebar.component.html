@@ -5,8 +5,8 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Check initial</a>
-      <a mat-list-item href="#">Semaine 1</a>
+      <a mat-list-item routerLink="/dashboard">Check initial</a>
+      <a mat-list-item href="week">Semaine 1</a>
       <a mat-list-item href="#">Semaine 2</a>
       <a mat-list-item href="#">Semaine 3</a>
       <a mat-list-item href="#">Semaine 4</a>
@@ -24,6 +24,10 @@
       </button>
       <span>Driver</span>
     </mat-toolbar>
-    <!-- Add Content Here -->
+    <div class="relative-container">
+      <main class="container">
+        <router-outlet></router-outlet>
+      </main>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

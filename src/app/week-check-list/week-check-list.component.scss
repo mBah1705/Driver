@@ -1,0 +1,35 @@
+:host {
+  display: block;
+}
+
+.intro {
+  font-size: large;
+  max-width: 90vw;
+}
+
+.content {
+  display: flex;
+
+  .check-list {
+    min-width: 50vw;
+    .check {
+      margin: 20px 0;
+      padding: 0 10px;
+      background: rgb(63,94,251);
+      background: linear-gradient(65deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      color: white;
+      box-shadow: 10px 10px 35px -2px rgba(0,0,0,0.62);
+    }
+  }
+
+  .actions {
+    margin: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+}

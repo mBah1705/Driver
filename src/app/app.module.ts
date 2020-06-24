@@ -17,12 +17,15 @@ import { MatListModule } from '@angular/material/list';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { WeekCheckListComponent } from './week-check-list/week-check-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    DashboardComponent
+    DashboardComponent,
+    WeekCheckListComponent
   ],
   imports: [
     BrowserModule,
@@ -37,10 +40,11 @@ import { MatCardModule } from '@angular/material/card';
     MatSidenavModule,
     MatListModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [SidebarComponent, DashboardComponent]
+  exports: [SidebarComponent, DashboardComponent, WeekCheckListComponent]
 })
 export class AppModule { }
