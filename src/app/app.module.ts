@@ -19,13 +19,15 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { WeekCheckListComponent } from './week-check-list/week-check-list.component';
+import { InitalCheckComponent } from './inital-check/inital-check.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     DashboardComponent,
-    WeekCheckListComponent
+    WeekCheckListComponent,
+    InitalCheckComponent
   ],
   imports: [
     BrowserModule,
