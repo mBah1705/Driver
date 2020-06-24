@@ -6,7 +6,7 @@ import { WeekCheckListComponent } from './week-check-list/week-check-list.compon
 
 const routes: Routes = [
   {
-    path: 'dashboard',
+    path: '',
     component: DashboardComponent,
   },
   {
