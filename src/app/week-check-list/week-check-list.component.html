@@ -4,7 +4,12 @@
 <div class="content">
   <div class="check-list">
     <div class="check" *ngFor="let check of checks">
-      <mat-slide-toggle>{{check.label}}</mat-slide-toggle>
+      <div>
+        <mat-slide-toggle [aria-label]="check.label"></mat-slide-toggle>
+      </div>
+      <div class="label">
+        <span>{{check.label}}</span>
+      </div>
     </div>
   </div>
   <div class="actions">
