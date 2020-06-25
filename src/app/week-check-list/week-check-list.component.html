@@ -1,14 +1,32 @@
-<div class="intro">
+<p class="intro">
   Ci-dessous la liste des points à cocher après Nettoyage Inspection & Lubrification pour la semaine choisie:
-</div>
+</p>
 <div class="content">
   <div class="check-list">
-    <div class="check" *ngFor="let check of checks">
-      <div>
-        <mat-slide-toggle [aria-label]="check.label"></mat-slide-toggle>
+    <div class="one-check-list">
+      <h3 class="title">
+        Visibilité
+      </h3>
+      <div class="check" *ngFor="let check of visibilityChecks">
+        <div>
+          <mat-slide-toggle [aria-label]="check.label"></mat-slide-toggle>
+        </div>
+        <div class="label">
+          <span>{{check.label}}</span>
+        </div>
       </div>
-      <div class="label">
-        <span>{{check.label}}</span>
+    </div>
+    <div class="one-check-list">
+      <h3 class="title">
+        Éclairage
+      </h3>
+      <div class="check" *ngFor="let check of lightingChecks">
+        <div>
+          <mat-slide-toggle [aria-label]="check.label"></mat-slide-toggle>
+        </div>
+        <div class="label">
+          <span>{{check.label}}</span>
+        </div>
       </div>
     </div>
   </div>

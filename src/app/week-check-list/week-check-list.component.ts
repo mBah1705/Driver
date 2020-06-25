@@ -6,15 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./week-check-list.component.scss']
 })
 export class WeekCheckListComponent implements OnInit {
-  checks = [
+  visibilityChecks = [
     {label: 'Pare-brises avant et arrière'},
     {label: 'Rétroviseurs externes et internes'},
     {label: 'Essuie-glaces avants et arrières'},
     {label: 'Liquide lave-glace'},
-    {label: 'Slide me!'},
-    {label: 'Slide me!'},
-    {label: 'Slide me!'},
-    {label: 'Slide me!'},
+  ];
+
+  lightingChecks = [
+    {label: 'Feux de croisement'},
+    {label: 'Feux de route'},
+    {label: 'Feux de position'},
+    {label: 'Clignotants'},
   ];
 
   constructor() { }
