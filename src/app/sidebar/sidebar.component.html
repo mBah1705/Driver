@@ -4,7 +4,15 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
+    <mat-nav-list *ngIf="isHandset$ | async">
+      <a mat-list-item routerLink="/" (click)="drawer.toggle()">Tableau de bord</a>
+      <a mat-list-item routerLink="inital-check" (click)="drawer.toggle()">Check initial</a>
+      <a mat-list-item routerLink="week" (click)="drawer.toggle()">Semaine 1</a>
+      <a mat-list-item href="#">Semaine 2</a>
+      <a mat-list-item href="#">Semaine 3</a>
+      <a mat-list-item href="#">Semaine 4</a>
+    </mat-nav-list>
+    <mat-nav-list *ngIf="(isHandset$ | async) === false">
       <a mat-list-item routerLink="/">Tableau de bord</a>
       <a mat-list-item routerLink="inital-check">Check initial</a>
       <a mat-list-item routerLink="week">Semaine 1</a>
