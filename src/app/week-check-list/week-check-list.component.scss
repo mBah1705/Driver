@@ -11,7 +11,7 @@
   display: flex;
 
   .check-list {
-    min-width: 50%;
+    width: 65%;
 
     .one-check-list {
       border-radius: 7px;
@@ -48,18 +48,18 @@
   }
 
   .actions {
-    margin: 20px;
+    margin: 10px 10px;
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: flex-start;
+    min-width: 30%;
+    position: relative;
+
+
+    button {
+      position: fixed;
+      height: 60px;
+      border-radius: 10px;
+    }
   }
 }
-
-
-// .content {
-//   border-top-style: outset;
-//   border-top-width: 2px;
-//   padding-top: 16px;
-//   display: flex;
-//   margin-top: 20px;
-// }
