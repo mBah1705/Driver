@@ -20,6 +20,7 @@ import { MatCardModule } from '@angular/material/card';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { WeekCheckListComponent } from './week-check-list/week-check-list.component';
 import { InitalCheckComponent } from './inital-check/inital-check.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { InitalCheckComponent } from './inital-check/inital-check.component';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
