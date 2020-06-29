@@ -14,5 +14,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 }
 
+// COLORS
+$primary-color: #673AB7;
+$secondary-color: #FEBA07;
+$danger-red: #e00034;
+$warning-yellow: #eb9a00;
+$pass-green: #24aa98;
 
+
+.check-is-good {
+  color: $pass-green;
+}
+
+.check-is-warning {
+  color: $warning-yellow;
+}
+
+.check-is-danger {
+  color: $danger-red;
+}
 
