@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable, from } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
-import { faUserTie, faTachometerAlt, faClipboardList, faListAlt } from '@fortawesome/free-solid-svg-icons';
+import { faUserTie, faTachometerAlt, faTasks, faListAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-sidebar',
@@ -14,7 +14,7 @@ export class SidebarComponent {
   faUserTie = faUserTie;
   faTachometerAlt = faTachometerAlt;
   faListAlt = faListAlt;
-  faClipboardList = faClipboardList;
+  faTasks = faTasks;
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
