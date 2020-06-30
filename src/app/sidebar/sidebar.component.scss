@@ -1,9 +1,12 @@
+@import '../../styles.scss';
+
 .sidenav-container {
   height: 100%;
 }
 
 .sidenav {
   width: 200px;
+  background: $secondary-color;
 }
 
 .sidenav .mat-toolbar {
@@ -14,4 +17,16 @@
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+::ng-deep .mat-list-item-content {
+  justify-content: space-between;
+}
+
+mat-sidenav fa-icon {
+  color: $primary-color;
+}
+
+mat-nav-list a {
+  font-weight: bold;
 }

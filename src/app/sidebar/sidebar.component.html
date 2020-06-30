@@ -5,20 +5,64 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list *ngIf="isHandset$ | async">
-      <a mat-list-item routerLink="/" (click)="drawer.toggle()">Tableau de bord</a>
-      <a mat-list-item routerLink="inital-check" (click)="drawer.toggle()">Check initial</a>
-      <a mat-list-item routerLink="week" (click)="drawer.toggle()">Semaine 1</a>
-      <a mat-list-item href="#">Semaine 2</a>
-      <a mat-list-item href="#">Semaine 3</a>
-      <a mat-list-item href="#">Semaine 4</a>
+      <a mat-list-item routerLink="/" (click)="drawer.toggle()">
+        S'identifier
+        <fa-icon [icon]="faUserTie" class="fa-2x"></fa-icon>
+      </a>
+      <a mat-list-item routerLink="/" (click)="drawer.toggle()">
+        Tableau de bord
+        <fa-icon [icon]="faTachometerAlt" class="fa-2x"></fa-icon>
+      </a>
+      <a mat-list-item routerLink="inital-check" (click)="drawer.toggle()">
+        Check initial
+        <fa-icon [icon]="faListAlt" class="fa-2x"></fa-icon>
+      </a>
+      <a mat-list-item routerLink="week" (click)="drawer.toggle()">
+        Semaine 1
+        <fa-icon [icon]="faClipboardList" class="fa-2x"></fa-icon>
+      </a>
+      <a mat-list-item href="#">
+        Semaine 2
+        <fa-icon [icon]="faClipboardList" class="fa-2x"></fa-icon>
+      </a>
+      <a mat-list-item href="#">
+        Semaine 3
+        <fa-icon [icon]="faClipboardList" class="fa-2x"></fa-icon>
+      </a>
+      <a mat-list-item href="#">
+        Semaine 4
+        <fa-icon [icon]="faClipboardList" class="fa-2x"></fa-icon>
+      </a>
     </mat-nav-list>
     <mat-nav-list *ngIf="(isHandset$ | async) === false">
-      <a mat-list-item routerLink="/">Tableau de bord</a>
-      <a mat-list-item routerLink="inital-check">Check initial</a>
-      <a mat-list-item routerLink="week">Semaine 1</a>
-      <a mat-list-item href="#">Semaine 2</a>
-      <a mat-list-item href="#">Semaine 3</a>
-      <a mat-list-item href="#">Semaine 4</a>
+      <a mat-list-item routerLink="/">
+        S'identifier
+        <fa-icon [icon]="faUserTie" class="fa-2x"></fa-icon>
+      </a>
+      <a mat-list-item routerLink="/">
+        Tableau de bord
+        <fa-icon [icon]="faTachometerAlt" class="fa-2x"></fa-icon>
+      </a>
+      <a mat-list-item routerLink="inital-check">
+        Check initial
+        <fa-icon [icon]="faListAlt" class="fa-2x"></fa-icon>
+      </a>
+      <a mat-list-item routerLink="week">
+        Semaine 1
+        <fa-icon [icon]="faClipboardList" class="fa-2x"></fa-icon>
+      </a>
+      <a mat-list-item href="#">
+        Semaine 2
+        <fa-icon [icon]="faClipboardList" class="fa-2x"></fa-icon>
+      </a>
+      <a mat-list-item href="#">
+        Semaine 3
+        <fa-icon [icon]="faClipboardList" class="fa-2x"></fa-icon>
+      </a>
+      <a mat-list-item href="#">
+        Semaine 4
+        <fa-icon [icon]="faClipboardList" class="fa-2x"></fa-icon>
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

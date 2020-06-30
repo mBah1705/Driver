@@ -1,6 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { faEye, faSmileBeam, faMeh, faFrown } from '@fortawesome/free-regular-svg-icons';
-import { faCar, faBinoculars, faLeaf, faShower } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCar,
+  faBinoculars,
+  faLeaf,
+  faShower,
+  faEye,
+  faSmileBeam,
+  faMeh,
+  faFrown
+} from '@fortawesome/free-solid-svg-icons';
 import {TooltipPosition} from '@angular/material/tooltip';
 import { FormControl } from '@angular/forms';
 
